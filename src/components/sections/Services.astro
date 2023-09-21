@@ -1,0 +1,189 @@
+---
+import Content from '../widgets/Content.astro';
+import Steps from '~/components/widgets/Steps.astro';
+---
+
+<>
+  <Content
+    id="services"
+    tagline="Servizi"
+    title="Scopri come possiamo aiutarti"
+    items={[
+      {
+        title: 'Bilancio si sostenibilità',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Digital Sustainability Reporting',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Analisi di materialità',
+        description: 'Uno strumento analitico, al servizio della rendicontazione non finanziaria',
+      },
+      {
+        title: 'Stakeholder engagement',
+        description: 'Una buona prassi per lo sviluppo di strategie aziendali condivise',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Colorful Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">ESG Advisory</h3>
+       Sviluppare una strategia ESG, basata sull’innovazione e costantemente monitorata.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Bilancio si sostenibilità',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Digital Sustainability Reporting',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Analisi di materialità',
+        description: 'Uno strumento analitico, al servizio della rendicontazione non finanziaria',
+      },
+      {
+        title: 'Stakeholder engagement',
+        description: 'Una buona prassi per lo sviluppo di strategie aziendali condivise',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1600132806370-bf17e65e942f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2194&q=80',
+      alt: 'Blueprint Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Finanza Sostenibile</h3>
+       Decisioni di finanziamento ESG, e riduzione del rischio finanziario.
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isAfterContent
+    items={[
+      {
+        title: 'Bilancio si sostenibilità',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Digital Sustainability Reporting',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Analisi di materialità',
+        description: 'Uno strumento analitico, al servizio della rendicontazione non finanziaria',
+      },
+      {
+        title: 'Stakeholder engagement',
+        description: 'Una buona prassi per lo sviluppo di strategie aziendali condivise',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Astronauts Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Reporting</h3>
+       Redazione del report di sostenibilità.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Content Widget **************** -->
+
+  <Content
+    isReversed
+    isAfterContent
+    items={[
+      {
+        title: 'Bilancio si sostenibilità',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Digital Sustainability Reporting',
+        description: 'Rendicontare le performance di sostenibilità delle organizzazioni',
+      },
+      {
+        title: 'Analisi di materialità',
+        description: 'Uno strumento analitico, al servizio della rendicontazione non finanziaria',
+      },
+      {
+        title: 'Stakeholder engagement',
+        description: 'Una buona prassi per lo sviluppo di strategie aziendali condivise',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Astronauts Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Impact ESG</h3>
+       Analisi degli impatti, dei rischi e delle opportunità in relazione alle questioni di sostenibilità.
+    </Fragment>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+  <!-- Steps Widget ****************** -->
+  <div class="bg-blue-50 dark:bg-transparent">
+    <Steps
+      title="Il percorso verso la sostenibilità."
+      items={[
+        {
+          title: 'Step 1: <span class="font-medium">Benchmarking e analisi di materialità</span>',
+          description:
+            'Analisi tendenze di settore, e richieste normative. Identificazione degli impatti, rischi e opportunità sostanziali in relazione alle questioni di sostenibilità.',
+          icon: 'tabler:package',
+        },
+        {
+          title: 'Step 2: <span class="font-medium">ESG assesment</em>',
+          description:
+            'Mappatura e analisi del profilo di sostenibilità; identificazione delle azioni di miglioramento.',
+          icon: 'tabler:letter-case',
+        },
+        {
+          title: 'Step 3: <span class="font-medium">Action plan</span>',
+          description:
+            'Al fine di <span class="font-bold">creare valore</span>, per l’organizzazione e per il contesto, è necessario strutturare un piano di azione che permetta di individuare il proprio posizionamento e la relativa evoluzione.',
+          icon: 'tabler:paint',
+        },
+        {
+          title: 'Ready!',
+          icon: 'tabler:check',
+        },
+      ]}
+      image={{
+        src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+        alt: 'Steps image',
+      }}
+    />
+  </div>
+</>

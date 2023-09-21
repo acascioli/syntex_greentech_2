@@ -1,0 +1,88 @@
+---
+import WidgetWrapper from '../ui/WidgetWrapper.astro';
+import Headline from '../ui/Headline.astro';
+import type { Features } from '../../types';
+
+import { Image } from 'astro:assets';
+import Cascioli from '../../assets/team/Cascioli.jpg';
+import Cascioli_qr_blue from '../../assets/team/Cascioli_qr_blue.svg';
+import Saldi from '../../assets/team/Saldi.jpg';
+import Saldi_qr_blue from '../../assets/team/Saldi_qr_blue.svg';
+import Boccolini from '../../assets/team/Boccolini.jpg';
+
+const team = [
+  {
+    title: 'Paolo Saldi',
+    description: 'Membro della commissione sostenibilità dell’ordine dei dottori commercialisti.',
+    image: Saldi,
+    qr: Saldi_qr_blue,
+    vcard: 'src/assets/team/Saldi_vcard.vcf',
+  },
+  {
+    title: 'Alessandro Cascioli',
+    description: 'Ingegnere energetico con un PhD in Sustainable Energy and Technology.',
+    image: Cascioli,
+    qr: Cascioli_qr_blue,
+    vcard: 'src/assets/team/Cascioli_vcard.vcf',
+  },
+  {
+    title: 'Emanuele Boccolini',
+    description: 'Senior sustainability consultant.',
+    image: Boccolini,
+    qr: Cascioli_qr_blue,
+    vcard: 'src/assets/team/Cascioli_vcard.vcf',
+  },
+];
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  columns = 2,
+
+  defaultIcon,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props as Features;
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline} />
+  <div class="grid gap-8 gap-x-12 sm:gap-y-8 lg:grid-cols-3 sm:grid-cols-2 mt-4 mx-8">
+    {
+      team.map((t) => (
+        <div class="team-contact flex flex-col items-center shadow-lg rounded-lg p-4 dark:bg-gray-900 bg-white">
+          <Image
+            src={t.image}
+            alt="profile image"
+            width={300}
+            height={300}
+            format="webp"
+            class="h-[120px] w-[120px] md:h-[150px] md:w-[150px]  shadow-lg aspect-thumbnail object-cover rounded-bl-3xl rounded-tr-3xl"
+          />
+          <div class="text-xl font-bold mt-4">{t.title}</div>
+          <div class="flex flex-col justify-between items-center h-full">
+            <p class="text-muted mt-2 text-center">{t.description} </p>
+
+            <a href={t.vcard} download="vcard" class="team-tag">
+              <Image
+                src={t.qr}
+                alt="qr code vcard"
+                width={60}
+                height={60}
+                format="webp"
+                class="mt-4 h-[130px] w-[130px] md:h-[150px] md:w-[150px] shadow-md shadow-[#0073E6]/30 rounded-lg cursor-pointer hover:shadow-lg hover:shadow-[#0073E6]/30 transition duration-200"
+              />
+            </a>
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</WidgetWrapper>
+
+<script src="../../utils/check_device.js"></script>

@@ -1,0 +1,43 @@
+---
+import Note from '../widgets/Note.astro';
+import Features from '../widgets/Features.astro';
+---
+
+<div id="about">
+  <div class="flex h-[100px] items-end"></div>
+  <Note />
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    tagline="Chi siamo"
+    title="Trasformiamo la conoscenza in valore"
+    subtitle="Operiamo in un ambiente aperto allo scambio di idee e di conoscenza che permette ai nostri professionisti di esprimere tutto il loro potenziale. Lavoro in team, rispetto delle persone, approfondimento continuo, trasparenza e leadership sono i valori in cui crediamo e che sono alla base della nostra identità."
+    items={[
+      {
+        title: 'Umanità e connessione con la natura',
+        description:
+          "Siamo certi che sia possibile innescare un circolo virtuoso in cui l'uomo possa avere un impatto positivo su se stesso e sulla natura.",
+        icon: 'tabler:brand-tailwind',
+      },
+      {
+        title: 'Valore aggiunto',
+        description:
+          "La sostenibilità è radicata nel nostro DNA. Oltre all'impatto positivo che ha sulla vito di ognuno di noi ne riconosciamo e siamo in grado di sfruttare il valore aggiunto che ne nasce per catalizzare il cambiamento.",
+        icon: 'tabler:components',
+      },
+      {
+        title: 'Innovazione',
+        description:
+          "Sembra che Einstein avesse definito come follia l'aspettarsi risultati diversi compiendo sempre le medesime azioni. Crediamo dunque che per innescare un cambiamento la chiave risieda nell'innovazione.",
+        icon: 'tabler:list-check',
+      },
+      {
+        title: 'Visione a lungo termine',
+        description:
+          'Non abbiamo intenzione di attendere che il cambiamento avvenga, vogliamo esserne registi. Crediamo che la sostenibilità sia un percorso da intraprendere insieme alle aziende.',
+        icon: 'tabler:rocket',
+      },
+    ]}
+  />
+</div>

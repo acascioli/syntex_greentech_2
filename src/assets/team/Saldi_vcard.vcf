@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:4.0
+
+FN:Paolo Saldi
+N:Saldi;Paolo
+GENDER:M
+TEL;TYPE=cell:+39 349 2110213
+EMAIL;TYPE=work:psaldi@syntexgreen.tech
+TITLE:Consultant
+ORG:Syntex GreenTech
+URL:https://www.syntexgreen.tech
+ADR;TYPE=work:;;Via Campo di Marte, 19;Perugia;Umbria;06124;IT
+
+END:VCARD

@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:4.0
+
+FN:Alessandro Cascioli
+N:Cascioli;Alessandro;;;Eng., PhD
+GENDER:M
+TEL;TYPE=cell:+39 348 5637707
+EMAIL;TYPE=work:acascioli@syntexgreen.tech
+TITLE:Consultant
+ORG:Syntex GreenTech
+URL:https://www.syntexgreen.tech
+ADR;TYPE=work:;;Via Angelo Morettini, 27;Perugia;Umbria;06128;IT
+NOTE:Passionate Energy Engineer & Sustainability Expert | PhD in Sustainable Energy & Technology | Bridging Sustainability & Cybersecurity for a Greener, Safer Tomorrow
+
+END:VCARD
