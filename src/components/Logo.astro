@@ -1,7 +1,17 @@
 ---
-import { SITE } from '~/utils/config';
+import { Image } from 'astro:assets';
+import logo_syntex_greentech from '~/assets/images/logo/logo_syntex_greentech.svg';
+import logo_syntex_greentech_dark from '~/assets/images/logo/logo_syntex_greentech_dark.svg';
 ---
 
-<span class="self-center ml-2 rtl:ml-0 rtl:mr-2 text-2xl md:text-xl font-bold text-gray-900 whitespace-nowrap dark:text-white">
-  🚀 {SITE?.name}
-</span>
+<>
+  <Image src={logo_syntex_greentech} alt="qr code vcard" width={120} height={120} format="webp" class="dark:hidden" />
+  <Image
+    src={logo_syntex_greentech_dark}
+    alt="qr code vcard"
+    width={120}
+    height={120}
+    format="webp"
+    class="hidden dark:block"
+  />
+</>

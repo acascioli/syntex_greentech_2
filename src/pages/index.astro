@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Syntex GreenTech',
   ignoreTitleTemplate: true,
 };
 ---
@@ -25,28 +25,26 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Vai al tool',
+        href: 'https://syntexgreen.tech/esg-tool',
         target: '_blank',
         icon: 'tabler:download',
       },
-      { text: 'Learn more', href: '#features' },
+      { text: 'Scopri di più', href: '#features' },
     ]}
     image={{ src: '~/assets/images/hero.png', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 3.0</span> + Tailwind CSS
+      Syntex <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-teal-400"> GreenTech</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 3.0
-        + Tailwind CSS.</span
+        Soluzioni <span class="font-semibold">ESG</span> per un futuro sostenibile e responsabile.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-       Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages
-      & Blogs.
+      <!-- <span class="block mb-1 sm:hidden font-bold text-blue-600"
+        >Soluzioni ESG per un futuro sostenibile e responsabile.</span
+      > -->
     </Fragment>
   </Hero>
 
@@ -57,46 +55,34 @@ const metadata = {
   <!-- Features Widget *************** -->
 
   <Features
-    id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022."
+    id="about"
+    tagline="Chi siamo"
+    title="Trasformiamo la conoscenza in valore"
+    subtitle="Operiamo in un ambiente aperto allo scambio di idee e di conoscenza che permette ai nostri professionisti di esprimere tutto il loro potenziale. Lavoro in team, rispetto delle persone, approfondimento continuo, trasparenza e leadership sono i valori in cui crediamo e che sono alla base della nostra identità."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Umanità e connessione con la natura',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
+          "Siamo certi che sia possibile innescare un circolo virtuoso in cui l'uomo possa avere un impatto positivo su se stesso e sulla natura.",
         icon: 'tabler:brand-tailwind',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Valore aggiunto',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
+          "La sostenibilità è radicata nel nostro DNA. Oltre all'impatto positivo che ha sulla vito di ognuno di noi ne riconosciamo e siamo in grado di sfruttare il valore aggiunto che ne nasce per catalizzare il cambiamento.",
         icon: 'tabler:components',
       },
       {
-        title: 'Best Practices',
+        title: 'Innovazione',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          "Sembra che Einstein avesse definito come follia l'aspettarsi risultati diversi compiendo sempre le medesime azioni. Crediamo dunque che per innescare un cambiamento la chiave risieda nell'innovazione.",
         icon: 'tabler:list-check',
       },
       {
-        title: 'Excellent Page Speed',
+        title: 'Visione a lungo termine',
         description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
+          'Non abbiamo intenzione di attendere che il cambiamento avvenga, vogliamo esserne registi. Crediamo che la sostenibilità sia un percorso da intraprendere insieme alle aziende.',
         icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
-      },
-      {
-        title: 'Open to new ideas and contributions',
-        description:
-          'Embracing a culture that is open to new ideas and contributions is integral fostering innovation, collaboration, and a dynamic user experience.',
-        icon: 'tabler:bulb',
       },
     ]}
   />
@@ -104,9 +90,10 @@ const metadata = {
   <!-- Content Widget **************** -->
 
   <Content
+    id="services"
     isReversed
-    tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    tagline="Servizi"
+    title="Scopri come possiamo aiutarti"
     items={[
       {
         title: 'Built on top of Astro 3.0',

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="116.10883mm"
+   height="47.673481mm"
+   viewBox="0 0 438.83654 180.18324"
+   sodipodi:docname="logo_syntex_greentech_working_file.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1088889"
+     inkscape:cx="478.40681"
+     inkscape:cy="301.2024"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1"
+     inkscape:document-units="mm" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1"
+     transform="translate(-253.55235,-350.61933)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:111.156px;font-family:Carlito;-inkscape-font-specification:'Carlito, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#333333;stroke:none;stroke-width:18.8056;-inkscape-stroke:none"
+       x="290.7027"
+       y="515.34985"
+       id="text56-5"
+       transform="scale(1.0896074,0.91776176)"
+       inkscape:export-filename="logo_syntex_greentech.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan56-9"
+         x="290.7027"
+         y="515.34985"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:111.156px;font-family:Carlito;-inkscape-font-specification:'Carlito, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#333333;stroke:none;stroke-width:18.8056">SYNTE</tspan></text>
+    <path
+       style="fill:#000000;stroke:#00ff00;stroke-width:5.66929;stroke-dasharray:none"
+       d="M 255.79304,472.34122 348.76512,352.35555"
+       id="path56-9" />
+    <path
+       style="fill:#000000;stroke:#00ff00;stroke-width:5.66929;stroke-dasharray:none"
+       d="M 595.45894,529.06631 688.43101,409.08063"
+       id="path56-3-0" />
+    <path
+       style="fill:#000000;stroke:#00ff00;stroke-width:5.66929;stroke-dasharray:none"
+       d="m 640.18769,409.96648 49.96049,64.47681"
+       id="path56-3-4-7" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.7514px;font-family:Carlito;-inkscape-font-specification:'Carlito, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#333333;stroke:none;stroke-width:2.087;stroke-dasharray:none"
+       x="252.73419"
+       y="530.43604"
+       id="text57-6"><tspan
+         sodipodi:role="line"
+         id="tspan57-3"
+         x="252.73419"
+         y="530.43604"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:33.7514px;font-family:Carlito;-inkscape-font-specification:'Carlito, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#333333;stroke:none;stroke-width:2.087"><tspan
+   style="fill:#00ff00"
+   id="tspan58">Green</tspan>Tech</tspan></text>
+  </g>
+</svg>
