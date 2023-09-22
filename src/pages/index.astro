@@ -9,6 +9,7 @@ import Team from '~/components/sections/Team.astro';
 import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import Impact from '~/components/sections/Impact.astro';
 import { Icon } from 'astro-icon/components';
+import Contacts from '~/components/sections/Contacts.astro';
 
 const metadata = {
   title: 'Syntex GreenTech',
@@ -46,20 +47,14 @@ const metadata = {
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to display AstroWind documentation.
-                        Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
-                        Astro is a very interesting technology. Thanks.
+    id="blog"
+    title="Rimani aggiornato sui costanti sviluppi in materia sostenibilità"
+    information={`Questo blog ha lo scopo di sensibilizzare i lettori. Siamo convinti che spargendo positività si possa instaurare un ciclo virtuoso.
                         `}
   />
 
-  <!-- Floating Button Widget ******* -->
-  <a href="#">
-    <button
-      title="Torna su"
-      class="fixed z-90 bottom-10 right-8 border-2 border-blue-600 w-12 h-12 rounded-full drop-shadow-lg flex justify-center items-center hover:border-blue-700 hover:drop-shadow-2xl hover:animate-bounce duration-300"
-    >
-      <Icon class="w-8 h-8 accordion-icon" name="tabler:arrow-badge-up" /></button
-    >
-  </a>
+  <!-- Contacts Widget **************** -->
+  <div class="bg-blue-50 dark:bg-transparent">
+    <Contacts id="contacts" />
+  </div>
 </Layout>

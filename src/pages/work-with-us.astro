@@ -1,0 +1,46 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contact',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="Lavora con noi" title="Entriamo in contatto!" />
+
+  <ContactUs
+    title="Il Profilo Perfetto"
+    subtitle="Se sei una persona brillante, dinamica, decisa a realizzarsi professionalmente, con propensione a lavorare per il gruppo, ti trovi nella sezione giusta."
+    inputs={[
+      {
+        type: 'text',
+        name: 'name',
+        label: 'Nome',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Email',
+      },
+      {
+        type: 'file',
+        name: 'cv',
+        label: 'CV',
+      },
+    ]}
+    textarea={{
+      label: 'Messaggio',
+    }}
+    disclaimer={{
+      label: 'Inviando questo modulo di contatto, riconosci e accetti la raccolta dei tuoi dati personali.',
+    }}
+    description="Valuteremo la tua candidatura e ti faremo sapere al più presto."
+    button="Invia"
+  />
+</Layout>
