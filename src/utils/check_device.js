@@ -9,13 +9,12 @@ let regexp = /android|iphone|kindle|ipad/i;
 it returns boolean value*/
 let isMobileDevice = regexp.test(details);
 
-const team_contact = document.querySelectorAll(".team-contact");
+const team_contact = document.querySelectorAll('.team-contact');
 
-if (isMobileDevice) {
-} else {
+if (!isMobileDevice) {
   team_contact.forEach((item) => {
-    const team_tag = item.querySelector(".team-tag");
+    const team_tag = item.querySelector('.team-tag');
 
-    team_tag.href = "mailto:info@syntexgreen.tech";
+    team_tag.href = 'mailto:info@syntexgreen.tech';
   });
 }

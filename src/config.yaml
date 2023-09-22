@@ -11,7 +11,7 @@ metadata:
   title:
     default: Syntex GreenTech
     template: '%s — AstroWind'
-  description: "Syntex GreenTech."
+  description: 'Syntex GreenTech.'
   robots:
     index: true
     follow: true

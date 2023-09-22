@@ -3,20 +3,7 @@ import type { Features } from '~/types';
 import WidgetWrapper from '../ui/WidgetWrapper.astro';
 import Features2 from '../widgets/Features2.astro';
 
-const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
-  tagline = await Astro.slots.render('tagline'),
-  items = [],
-  columns = 2,
-
-  defaultIcon,
-
-  id,
-  isDark = false,
-  classes = {},
-  bg = await Astro.slots.render('bg'),
-} = Astro.props as Features;
+const { id, isDark = false, classes = {}, bg = await Astro.slots.render('bg') } = Astro.props as Features;
 ---
 
 <!-- Features2 Widget ************** -->
