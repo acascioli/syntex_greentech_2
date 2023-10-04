@@ -2,7 +2,7 @@ BEGIN:VCARD
 VERSION:4.0
 
 FN:Alessandro Cascioli
-N:Cascioli;Alessandro;;;Eng., PhD
+N:Cascioli;Alessandro;;;Ing., PhD
 GENDER:M
 TEL;TYPE=cell:+39 348 5637707
 EMAIL;TYPE=work:acascioli@syntexgreen.tech
