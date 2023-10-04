@@ -4,8 +4,8 @@ import Cascioli from '../../assets/team/Cascioli.jpg';
 import Cascioli_qr_blue from '../../assets/team/Cascioli_qr_blue.svg';
 import Saldi from '../../assets/team/Saldi.jpg';
 import Saldi_qr_blue from '../../assets/team/Saldi_qr_blue.svg';
-import Boccolini from '../../assets/team/Boccolini.jpg';
 import { Image } from 'astro:assets';
+import { Icon } from 'astro-icon/components';
 
 export function getStaticPaths() {
   const pages = [
@@ -16,6 +16,7 @@ export function getStaticPaths() {
       image: Saldi,
       qr: Saldi_qr_blue,
       vcard: '/team/Saldi_vcard.vcf',
+      href: 'https://www.linkedin.com/in/paolo-saldi-40217174/',
     },
     {
       member: 'Cascioli',
@@ -24,14 +25,7 @@ export function getStaticPaths() {
       image: Cascioli,
       qr: Cascioli_qr_blue,
       vcard: '/team/Cascioli_vcard.vcf',
-    },
-    {
-      member: 'Boccolini',
-      title: 'Emanuele Boccolini',
-      description: 'Senior sustainability consultan',
-      image: Boccolini,
-      qr: Cascioli_qr_blue,
-      vcard: '/team/Cascioli_vcard.vcf',
+      href: 'https://www.linkedin.com/in/alessandro-cascioli-778370149/',
     },
   ];
 
@@ -43,7 +37,7 @@ export function getStaticPaths() {
   });
 }
 
-const { title, description, image, qr, vcard } = Astro.props;
+const { title, description, image, qr, vcard, href } = Astro.props;
 ---
 
 <TeamLayout>
@@ -73,6 +67,15 @@ const { title, description, image, qr, vcard } = Astro.props;
             format="webp"
             class="mt-4 h-[130px] w-[130px] md:h-[150px] md:w-[150px] shadow-md shadow-[#0073E6]/30 rounded-lg cursor-pointer hover:shadow-lg hover:shadow-[#0073E6]/30 transition duration-200 bg-slate-200"
           />
+        </a>
+      </div>
+      <div class="w-full flex justify-end">
+        <a
+          class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+          aria-label="LinkedIn"
+          href={href}
+        >
+          <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
         </a>
       </div>
     </div>
