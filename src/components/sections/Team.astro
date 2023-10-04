@@ -8,8 +8,7 @@ import Cascioli from '../../assets/team/Cascioli.jpg';
 import Cascioli_qr_blue from '../../assets/team/Cascioli_qr_blue.svg';
 import Saldi from '../../assets/team/Saldi.jpg';
 import Saldi_qr_blue from '../../assets/team/Saldi_qr_blue.svg';
-import Boccolini from '../../assets/team/Boccolini.jpg';
-import Boccolini_qr_blue from '../../assets/team/Boccolini_qr_blue.svg';
+import { Icon } from 'astro-icon/components';
 
 const team = [
   {
@@ -18,6 +17,7 @@ const team = [
     image: Saldi,
     qr: Saldi_qr_blue,
     vcard: '/team/Saldi_vcard.vcf',
+    href: 'https://www.linkedin.com/in/paolo-saldi-40217174/',
   },
   {
     title: 'Alessandro Cascioli',
@@ -25,13 +25,7 @@ const team = [
     image: Cascioli,
     qr: Cascioli_qr_blue,
     vcard: '/team/Cascioli_vcard.vcf',
-  },
-  {
-    title: 'Emanuele Boccolini',
-    description: 'Senior sustainability consultant.',
-    image: Boccolini,
-    qr: Boccolini_qr_blue,
-    vcard: '/team/Boccolini_vcard.vcf',
+    href: 'https://www.linkedin.com/in/alessandro-cascioli-778370149/',
   },
 ];
 
@@ -49,10 +43,10 @@ const {
 
 <WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-5xl ${classes?.container ?? ''}`} bg={bg}>
   <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline} />
-  <div class="grid gap-8 gap-x-12 sm:gap-y-8 lg:grid-cols-3 sm:grid-cols-2 mt-4 mx-8">
+  <div class="grid gap-8 gap-x-12 sm:gap-y-8 lg:grid-cols-2 sm:grid-cols-2 mt-4 mx-8">
     {
       team.map((t) => (
-        <div class="team-contact flex flex-col items-center shadow-lg rounded-lg p-4 dark:bg-gray-900 bg-white">
+        <div class="team-contact flex flex-col items-center shadow-lg rounded-lg p-4 dark:bg-gray-900 bg-white md:w-80">
           <Image
             src={t.image}
             alt="profile image"
@@ -75,6 +69,15 @@ const {
                 class="mt-4 h-[130px] w-[130px] md:h-[150px] md:w-[150px] shadow-md shadow-[#0073E6]/30 rounded-lg cursor-pointer hover:shadow-lg hover:shadow-[#0073E6]/30 transition duration-200"
               />
             </a>
+            <div class="w-full flex justify-end">
+              <a
+                class="text-muted dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+                aria-label="LinkedIn"
+                href={t.href}
+              >
+                <Icon name="tabler:brand-linkedin" class="w-5 h-5" />
+              </a>
+            </div>
           </div>
         </div>
       ))
