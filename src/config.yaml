@@ -11,14 +11,14 @@ metadata:
   title:
     default: Syntex GreenTech
     template: '%s — AstroWind'
-  description: 'Syntex GreenTech.'
+  description: 'Soluzioni ESG per un futuro sostenibile e responsabile.'
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Syntex GreenTech
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/logo/logo_syntex_greentech.png'
         width: 1200
         height: 628
     type: website
