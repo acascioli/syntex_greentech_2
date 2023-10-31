@@ -7,6 +7,7 @@ export const headerData = {
     { text: 'Servizi', href: '/#services' },
     // { text: 'Impatto', href: '/#impact' },
     { text: 'Team', href: '/#team' },
+    { text: 'Blog', href: '/#blog' },
     // {
     //   text: 'Blog',
     //   href: '/#blog',
