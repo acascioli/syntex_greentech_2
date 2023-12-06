@@ -29,10 +29,10 @@ export function getStaticPaths() {
     },
   ];
 
-  return pages.map(({ member, title, description, image, qr, vcard }) => {
+  return pages.map(({ member, title, description, image, qr, vcard, href }) => {
     return {
       params: { member },
-      props: { title, description, image, qr, vcard },
+      props: { title, description, image, qr, vcard, href },
     };
   });
 }
