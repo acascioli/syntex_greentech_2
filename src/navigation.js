@@ -98,6 +98,6 @@ export const footerData = {
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
   ],
   footNote: `
-    Realizzato da <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://syntexgreen.tech/"> Syntex GreenTech</a> · Tutti i diritti riservati.
+    Realizzato da <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://syntexgreen.tech/"> Syntex GreenTech</a> · P.I. 03636730545 · Tutti i diritti riservati.
   `,
 };
