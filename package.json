@@ -24,6 +24,11 @@
     "lodash.merge": "^4.6.2",
     "unpic": "^3.10.0"
   },
+  "overrides": {
+    "astro-icon": {
+      "@iconify/tools": "^4.0.0"
+    }
+  },
   "devDependencies": {
     "@astrojs/mdx": "^1.1.0",
     "@astrojs/partytown": "^2.0.0",
